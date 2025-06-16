@@ -1,0 +1,19 @@
+<article>
+
+    <div class="blog-post-list">
+        
+        <% for (let i=0; i<posts.length; i++) { %>
+        <form class="blog-post box-shadow" action="/blog/get-blog-post" method="post">
+            
+            <h2><%=posts[i].title%></h2>
+            <br/>
+            <p><%=posts[i].author%></p>
+            <p><%=posts[i].date%></p>
+    
+            <input type="submit" name="title" value="<%=posts[i].title%>">
+        </form>
+        <% } %>
+
+    </div>
+
+</article>

@@ -1,0 +1,14 @@
+.blog-post-list {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.blog-post {
+  width: 60ch;
+  padding: 1rem;
+  border: 0.2rem solid black;
+}
+.blog-post > h2 {
+  text-wrap: balance;
+}

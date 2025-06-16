@@ -1,0 +1,105 @@
+:root {
+    --primary: #102C57;
+    --secondary: #DAC0A3;
+    --accent: #EADBC8;
+    --background: #FEFAF6;
+    --dark-text: #292929;
+    --light-text: #FEFAF6;
+}
+
+/* colors */
+.bg-primary {
+    background-color: var(--primary);
+}
+.txt-primary {
+    color: var(--primary);
+}
+.bg-secondary {
+    background-color: var(--secondary);
+}
+.txt-secondary {
+    color: var(--secondary);
+}
+.bg-accent {
+    background-color: var(--accent);
+}
+.txt-accent {
+    color: var(--accent);
+}
+.bg {
+    background-color: var(--background);
+}
+.dark-bg {
+    background-color: var(--dark-text);
+}
+.dark-txt 
+{
+    color: var(--dark-text);
+}
+.light-txt {
+    color: var(--light-text);
+}
+
+/* fonts*/
+.font-1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+.font-2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+}
+.font-3 {
+    font-family: "Bodoni Moda SC", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    /* font-style: italic; */
+}
+.font-4 {
+    font-family: "Bodoni Moda SC", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+}
+
+/* root elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-image: url("/images/toa-heftiba-nrSzRUWqmoI-unsplash.jpg");
+    background-size: cover;
+    background-position: center; */
+}
+section {
+    /* width: fit-content; */
+    width: 100%;
+    margin-top: 7rem;
+}
+
+
+/* custom classes */
+.container {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+.box-shadow {
+    box-shadow: 0 0.1rem 0.2rem rgba(63, 63, 63, 0.5);
+}
+
+.soft-edges {
+    border-radius: 0.2rem;
+}

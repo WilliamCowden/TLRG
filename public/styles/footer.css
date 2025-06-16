@@ -1,0 +1,22 @@
+.bg-footer {
+    background: linear-gradient(to top, black, var(--text));
+}
+
+footer {
+    padding: 4rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.footer-link-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-link {
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    font-size: 10pt;
+}

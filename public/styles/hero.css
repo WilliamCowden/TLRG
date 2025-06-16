@@ -1,0 +1,33 @@
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0 2rem;
+    aspect-ratio: 4/1;
+
+    background-image: url("/images/francesca-tosolini-XcVm8mn7NUM-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-color: var(--text);
+}
+
+.hero-element-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.hero-tagline {
+    padding: 0;
+    margin: 0;
+    font-size: 6rem;
+    text-align: left;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    text-shadow: 0 0 0.2em black;
+}
