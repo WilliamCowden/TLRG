@@ -1,19 +1,23 @@
-<article>
-
-    <div class="blog-post-list">
+<article class="bg">
+    <section id="blog-container">
+        <div class="blog-post-list">
+            <% for (let i=0; i<posts.length; i++) { %>
+                <form class="blog-post-list-item" 
+                action="/blog/get-post" method="post">
+                    <input type="submit" name="title" value="<%=posts[i].title%>">
+                    <h2><%=posts[i].title%></h2>
+                    <br/>
+                    <p><%=posts[i].author%></p>
+                    <p><%=posts[i].date%></p>
+                </form>
+            <% } %>
+        </div>
         
-        <% for (let i=0; i<posts.length; i++) { %>
-        <form class="blog-post box-shadow" action="/blog/get-blog-post" method="post">
-            
-            <h2><%=posts[i].title%></h2>
+        <div class="blog-post">
+            <h1 class="blog-post-header"><%=locals.currentPost.title%></h1>
+            <p><%=locals.currentPost.author%></p>
             <br/>
-            <p><%=posts[i].author%></p>
-            <p><%=posts[i].date%></p>
-    
-            <input type="submit" name="title" value="<%=posts[i].title%>">
-        </form>
-        <% } %>
-
-    </div>
-
+            <p class="blog-post-body"><%=locals.currentPost.body%></p>
+        </div>
+    </section>
 </article>

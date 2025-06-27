@@ -4,7 +4,8 @@
     --accent: #EADBC8;
     --background: #FEFAF6;
     --dark-text: #292929;
-    --light-text: #FEFAF6;
+    --light-text: #ffffff;
+    --brown-txt: #945f2e;
 }
 
 /* colors */
@@ -39,6 +40,9 @@
 .light-txt {
     color: var(--light-text);
 }
+.brown-txt {
+    color: var(--brown-txt);
+}
 
 /* fonts*/
 .font-1 {
@@ -71,21 +75,20 @@
 body {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 article {
+    max-width: 2000px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-image: url("/images/toa-heftiba-nrSzRUWqmoI-unsplash.jpg");
-    background-size: cover;
-    background-position: center; */
 }
 section {
-    /* width: fit-content; */
     width: 100%;
-    margin-top: 7rem;
 }
 
 

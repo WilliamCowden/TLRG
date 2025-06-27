@@ -16,11 +16,12 @@ nav {
 }
 
 .logo {
-    background-color: black;
+    background-image: url("/images/Logo SVG(2).svg");
+    background-position: center;
+    background-size: cover;
     height: 100%;
     aspect-ratio: 1/1;
     margin: 0 1.2rem;
-    text-decoration: none;
 }
 
 .brand-name {

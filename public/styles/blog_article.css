@@ -1,14 +1,41 @@
-.blog-post-list {
-  display: flex;
-  gap: 2rem;
+#blog-container {
+  display: grid;
+  grid-template-columns: 40ch 1fr;
   margin: 2rem 0;
 }
 
-.blog-post {
+.blog-post-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-post-list-item {
   width: 60ch;
   padding: 1rem;
-  border: 0.2rem solid black;
+  border: 1px solid gray;
+  transition: 150ms ease;
 }
-.blog-post > h2 {
+
+.blog-post-list-item:hover {
+  background-color: black;
+  color: white;
+}
+
+.blog-post-list-item > h2 {
   text-wrap: balance;
+}
+
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-post-img {
+  max-width: 100%;
+}
+
+.blog-post-body {
+  width: 60ch;
+  font-size: 14pt;
 }
